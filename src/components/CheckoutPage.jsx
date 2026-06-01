@@ -39,7 +39,7 @@ export function CheckoutPage() {
       {/* Page Header */}
       <div className="bg-white border-b border-gray-200 mb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h1 className="text-4xl font-bold text-gray-900">Shopping Cart</h1>
+          <h1 className="text-4xl font-bold text-gray-900">Your Shopping Cart</h1>
           <p className="text-gray-600 mt-2">Browse our premium products</p>
         </div>
       </div>
