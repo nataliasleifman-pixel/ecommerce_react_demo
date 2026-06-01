@@ -13,7 +13,7 @@ export function ProductCard({ product, onAddToCart }) {
     <>
       <div className="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
         {/* Product Image */}
-        <div className="relative w-full h-56 bg-gray-200 overflow-hidden">
+        <div className="relative w-full h-72 bg-gray-200 overflow-hidden">
           <img
             src={product.image}
             alt={product.title}
