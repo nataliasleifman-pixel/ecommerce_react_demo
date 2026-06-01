@@ -11,7 +11,7 @@ export function ProductCard({ product, onAddToCart }) {
 
   return (
     <>
-      <div className="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
+      <div className="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all mx-2">
         {/* Product Image */}
         <div className="relative w-full h-56 bg-gray-200 overflow-hidden">
           <img
