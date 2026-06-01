@@ -61,7 +61,7 @@ export function ProductCard({ product, onAddToCart }) {
           {/* Add to Cart Button */}
           <button
             onClick={() => setShowConfirm(true)}
-            className="checkout-button w-full px-4 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors active:scale-95"
+            className="checkout-button w-full px-4 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors active:scale-95"
           >
             Add to Cart
           </button>
