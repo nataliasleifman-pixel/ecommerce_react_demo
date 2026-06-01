@@ -136,7 +136,7 @@ export function CheckoutPage() {
               </div>
 
               {/* Checkout Button */}
-              <button className="checkout-button w-full mt-6 px-6 py-4 bg-blue-600 text-white rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors active:scale-95">
+              <button className="checkout-button w-full mt-6 px-6 py-4 bg-orange-600 text-white rounded-lg font-bold text-lg hover:bg-orange-700 transition-colors active:scale-95">
                 Proceed to Checkout
               </button>
 
