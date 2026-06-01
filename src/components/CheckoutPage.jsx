@@ -64,7 +64,7 @@ export function CheckoutPage() {
 
           {/* Sidebar - Cart Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-sm p-6 sticky top-24">
+            <div className="bg-white rounded-lg shadow-sm p-8 sticky top-24">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Order Summary</h2>
 
               {/* Cart Items */}
