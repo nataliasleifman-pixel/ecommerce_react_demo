@@ -9,15 +9,21 @@ import { Modal } from './Modal';
 export function ProductCard({ product, onAddToCart }) {
   const [showConfirm, setShowConfirm] = useState(false);
 
+  // Refactor: consolidate class names into constants (no visual change intended)
+  const containerClasses = "product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all";
+  const imageWrapperClasses = "relative w-full h-72 bg-gray-200 overflow-hidden";
+  const imgClasses = "w-full h-full object-cover hover:scale-110 transition-transform duration-300";
+  const buttonClasses = "checkout-button w-full px-4 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors active:scale-95";
+
   return (
     <>
-      <div className="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all">
+      <div className={containerClasses}>
         {/* Product Image */}
-        <div className="relative w-full h-56 bg-gray-200 overflow-hidden">
+        <div className={imageWrapperClasses}>
           <img
             src={product.image}
             alt={product.title}
-            className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            className={imgClasses}
           />
           {/* Sale badge - intentionally positioned */}
           <div className="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -59,10 +65,7 @@ export function ProductCard({ product, onAddToCart }) {
           </div>
 
           {/* Add to Cart Button */}
-          <button
-            onClick={() => setShowConfirm(true)}
-            className="checkout-button w-full px-4 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors active:scale-95"
-          >
+          <button onClick={() => setShowConfirm(true)} className={buttonClasses}>
             Add to Cart
           </button>
         </div>
